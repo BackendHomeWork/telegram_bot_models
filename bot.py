@@ -215,32 +215,3 @@ class TelegramBot:
         # 3. Add caption to data if provided
         # 4. Make POST request and return response
         pass
-
-    def echo_message(self, message):
-        """
-        Echo back any type of message received from a user.
-
-        This is the main echo method that determines the message type and
-        calls the appropriate send method to echo it back.
-
-        Args:
-            message (Message): A Message object from models.py containing
-                             the message to echo back
-
-        Returns:
-            dict or None: The response from the appropriate send method
-
-        Note:
-            Students should implement this method to:
-            1. Check message type (text, voice, photo, video, dice)
-            2. Call the appropriate echo method
-            3. Handle unknown message types gracefully
-        """
-        # TODO: Implement message echoing logic
-        # 1. Check if message.text exists -> call send_message()
-        # 2. Check if message.voice exists -> call send_voice() with voice.file_id
-        # 3. Check if message.photo exists -> call send_photo() with largest photo's file_id
-        # 4. Check if message.video exists -> call send_video() with video.file_id
-        # 5. Check if message.dice exists -> call send_dice() with dice.emoji
-        # 6. For unknown types, send a default message
-        pass
